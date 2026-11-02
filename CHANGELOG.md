@@ -1,6 +1,8 @@
 # Changelog
 
 ## 다음 버전
+- 규모별 문서 구성 `npm run profile:apply -- small|medium|large`
+- 보안 역할 · 서브에이전트 · 게이트 `npm run security:check` (`checks.sh` 연결 전, 실험 중)
 - 기여 방식: 원본에는 이슈로만 (외부 PR 받지 않음, main 보호 규칙)
 - 개선 제안 이슈 폼에 코드 예시 칸
 

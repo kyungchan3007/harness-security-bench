@@ -1,10 +1,13 @@
 {
-  "name": "harness-template",
+  "name": "harness-security-bench",
   "private": true,
   "type": "module",
   "scripts": {
     "check": "bash .agents/checks.sh",
     "spec:new": "node .agents/scripts/new-spec.mjs",
-    "test:harness": "node --test .agents/scripts/harness.test.mjs"
+    "test": "node --test .agents/security/security.test.mjs .agents/profiles/apply.test.mjs",
+    "test:harness": "node --test .agents/scripts/harness.test.mjs",
+    "profile:apply": "node .agents/profiles/apply.mjs",
+    "security:check": "node .agents/security/check.mjs"
   }
 }
